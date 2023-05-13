@@ -54,7 +54,7 @@ Start the server
 
 ## API Documentation
 
-You can access the API documentation by clicking [here](http://localhost:3000/api) after starting the application.
+You can access the Swagger API documentation by typing [http://localhost:3000/api](http://localhost:3000/api) in the browser after starting the application.
 
 
 ## Contributing
