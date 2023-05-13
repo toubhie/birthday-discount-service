@@ -25,7 +25,7 @@ export class ScheduleTaskService {
         private mailService: MailService
     ) { }
 
-    
+
     @Cron( CronExpression.EVERY_DAY_AT_6AM )
     async runBirthdayNotificationTask() {
         try {
@@ -37,9 +37,9 @@ export class ScheduleTaskService {
             // Query the database for customers whose birthday is within 7 days from now
             const customers = await this.customerRepository
                 .createQueryBuilder('customer')
-                // .where(`DATE_PART('day', customer.dob - :sevenDaysFromNow) <= 7`, {
-                //     sevenDaysFromNow,
-                // })
+                .where(`DATE_PART('day', customer.dob - :sevenDaysFromNow) <= 7`, {
+                    sevenDaysFromNow,
+                })
                 .getMany();
 
             if(!customers){ console.log('No customer whose birthday is : ' + sevenDaysFromNow)}
