@@ -21,10 +21,6 @@ This is a service that is responsible for generating and sending personalized di
 **7) Database Module:** This module handles all interactions with the database, including data storage and retrieval.
 
 
-## API Documentation
-
-Click here [here](https://documenter.getpostman.com/view/2563187/2s93XyShJL) to view the API documentation for the task and projects management APIs.
-
 
 ## Pre-requisites
 
@@ -54,6 +50,12 @@ Start the server
 ```bash
   npm run start:dev
 ```
+
+
+## API Documentation
+
+You can access the API documentation by clicking [here](http://localhost:3000/api) after starting the application.
+
 
 ## Contributing
 
