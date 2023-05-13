@@ -25,8 +25,8 @@ export class ScheduleTaskService {
         private mailService: MailService
     ) { }
 
-
-    @Cron( CronExpression.EVERY_DAY_AT_6AM )
+    
+    @Cron( CronExpression.EVERY_10_SECONDS )
     async runBirthdayNotificationTask() {
         try {
             // Get all customers whose birthdays is in 7 days from now

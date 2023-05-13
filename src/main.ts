@@ -9,6 +9,7 @@ async function bootstrap() {
     .setTitle('Birthday Discount Service')
     .setVersion('1.0')
     .addTag('r-ainbow')
+    .addTag('microservice')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
